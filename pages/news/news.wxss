@@ -1,0 +1,23 @@
+/* pages/news/news.wxss */
+.container{
+  margin:20rpx 0 0 20rpx;
+}
+.notice{
+  width:100rpx;
+  height:100rpx;
+  vertical-align: middle;
+}
+.notice_text{
+  display: inline-block;
+  width:80%;
+  font-size:35rpx;
+  color:#ccc;
+  /* vertical-align: middle; */
+  margin-top:20rpx;
+  margin-left:20rpx;
+  border-bottom:1px solid #f0f0f0;
+  padding-bottom:40rpx;
+}
+.con_son2{
+  margin-top:10px;
+}

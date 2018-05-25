@@ -1,0 +1,35 @@
+<!--pages/contract/create_contract/create_contract.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='section' bindtap='custom'>
+      <image class='image' src='/images/arro.png'></image>
+      <label class='label' for='name'>客户</label>
+      <input id='name' type="text" name="custom" value="{{name}}" placeholder='请输入'></input>
+    </view>
+    <view class='section'>
+      <label class='label' for='name'>主题</label>
+      <input id='name' name="theme" type="text" placeholder='请输入'></input>
+    </view>
+
+    <view class='section'>
+      <label class='label' for='name'>金额</label>
+      <input id='name' name="money" type="text" placeholder='请输入'></input>
+    </view>
+    <view class="section">
+      <label class='label' for='name'>状态</label>
+      <radio-group class="radio-group" name="radiogroup">
+        <label>
+          <radio class='radio' name='未签' color="#405f80" id='switch' value='未签' checked="true">未签</radio>
+        </label>
+        <label>
+          <radio class='radio' color="#405f80" name='待签' id='switch' value='已签' checked=''>已签</radio>
+
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="btn-area">
+      <button style="background-color:#405f80;color:#fff;width:70%;border-radius:3px;" formType="submit">保存</button>
+    </view>
+  </form>
+</view>

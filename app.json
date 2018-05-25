@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/index/index",
+    
+    "pages/select/select",
+    "pages/news/news",
+    "pages/news/new_son/new_info/new_info",
+    "pages/job/job",
+    "pages/personal/personal",
+    "pages/main/sale/sale",
+    "pages/main/sale/create_sale/create_sale",
+    "pages/main/sale/info_sale/info_sale",
+    "pages/main/custom/custom",
+    "pages/main/custom/create_custom/create_custom",
+    "pages/main/custom/custom_info/custom_info",
+    "pages/product/product",
+    "pages/sign/sign",
+    "pages/plan/sale_list",
+    "pages/plan/display_plan/plan",
+    "pages/plan/create_plan/create_plan",
+    "pages/plan/create_plan/leader_list/leader_list",
+    "pages/count/count",
+    "pages/contract/contract",
+    "pages/contract/create_contract/create_contract",
+    "pages/contract/create_contract/custom_list/custom_list",
+    "pages/news/new_son/new_son",
+    "pages/personal/personal_info/personal_info",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "images/tab/main.png",
+        "selectedIconPath": "images/tab/main3.png",
+        "color": "#000",
+        "selectedColor": "#405f80"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "消息",
+        "iconPath": "images/tab/new.png",
+        "selectedIconPath": "images/tab/new3.png"
+      },
+      {
+        "pagePath": "pages/job/job",
+        "text": "通讯录",
+        "iconPath": "images/tab/work1.png",
+        "selectedIconPath": "images/tab/works.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我",
+        "iconPath": "images/tab/me.png",
+        "selectedIconPath": "images/tab/me2.png"
+      }
+    ]
+  }
+}

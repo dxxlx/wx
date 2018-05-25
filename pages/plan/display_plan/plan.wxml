@@ -1,0 +1,19 @@
+<!--pages/plan/plan.wxml-->
+<import src="display_plan_item/display_plan_item"/>
+<view>
+  <block>
+    <view class="container" wx:if="{{create}}">
+      <image class="img" src='/images/nores.png'></image>
+      <text>目前没有拜访计划</text>
+      <view bindtap='createContract' class="create">请创建</view>
+    </view>
+  </block>
+</view>
+<view class="container1" wx:if="{{list}}">
+  <block wx:for="{{info}}" wx:for-item="item">
+    <view class="section">
+     <template is="display_plan_item" data="{{...item}}"/>
+    </view>
+  </block>
+  <button style="margin:30rpx auto 0 auto;background-color:#405f80;color:white;width:70%" bindtap="createContract">添加新的拜访计划</button>
+</view>

@@ -1,0 +1,64 @@
+/* pages/crm/custom/exist_custom/custom_info/custom_info.wxss */
+
+.container{
+  margin-top:30rpx;
+}
+.container_img{
+  margin-left:20rpx;
+  margin-bottom:20rpx;
+}
+.visit{
+  width:80rpx;
+  height:80rpx;
+  vertical-align: middle;
+}
+text{
+  font-size:30rpx;
+  display:inline-block;
+  margin-left:20rpx;
+}
+.k{
+  border-left: 3px solid #405f80;
+  display: inline-block;
+  /* width:1rpx; */
+  float: left;
+  height: 40rpx;
+  margin-right:10rpx;
+}
+.section1{
+  padding:10rpx 0 20rpx 23rpx;
+  border-bottom:1px solid #ccc; 
+}
+.section1 .text{
+  font-size:35rpx;
+  font-weight: bold;
+}
+.title{
+  font-size:30rpx;
+  width:30%;
+  float:left;
+  margin-top:10rpx;
+  color: #adadad
+}
+.section{
+  margin-left:40rpx;
+  margin-right: 40rpx;
+  font-size: 30rpx;
+  padding-top:10rpx;
+  border-bottom:1px solid #ccc; 
+  padding: 15rpx 0 15rpx 0;
+}
+.btn-area .button1{
+  width:40%;
+ margin:20rpx auto 0 auto;
+  background-color: #405f80;
+  /* display: inline-block; */
+  color:white;
+}
+.button2{
+  width:40%;
+  margin:20rpx 0 0 30rpx;
+  background-color: #405f80;
+  display: inline-block;
+  color:white;
+}

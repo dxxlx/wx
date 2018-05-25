@@ -1,0 +1,20 @@
+<import src="sale_item/sale_item_template"/>
+<!--pages/crm/sale/sale.wxml-->
+<view>
+  <block >
+    <view class="container" wx:if="{{create}}" >
+      <image class="img" src='/images/nores.png'></image>
+      <text>目前没有销售记录</text>
+      <view bindtap='createSale' class="create">请创建</view>
+    </view>
+  </block>
+
+</view>
+<view class="container1"  wx:if="{{display}}" >
+  <block wx:for="{{info}}" wx:for-item="item">
+    <view class="section" bindtap='checkInfo' data-postID="{{item.sale_id}}">
+      <template is="sale_item" data="{{...item}}"/>
+    </view>
+  </block>
+  <button style="margin:30rpx auto 0 auto;background-color:#405f80;color:white;width:70%" bindtap="add">添加新的销售线索</button>
+</view>

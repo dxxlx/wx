@@ -1,0 +1,59 @@
+<!--pages/main/main.wxml-->
+<view>
+  <view class="slide">
+    <swiper indicator-dots="true" autoplay="true">
+      <swiper-item>
+        <image style="height:400rpx;width:100%" src="/images/bei3.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image style="height:400rpx;width:100%" src="/images/bg4.jpg"></image>
+      </swiper-item>
+      <!-- <swiper-item>
+        <image style="height:400rpx;width:100%" src="/images/4.jpg"></image>
+      </swiper-item> -->
+    </swiper>
+  </view>
+  <view class="name">
+    <image class="head" src="{{userInfo.avatarUrl}}"></image>
+    <view class="head_text">{{name}}</view>
+  </view>
+  <view class="list">
+    <view class="list_1">
+      <view class="list_son" catchtap='saleModule'>
+        <image src="/images/sale.png"></image>
+        <text>销售</text>
+      </view>
+      <view class="list_son" bindtap='custom'>
+        <image src="/images/cus5.png"></image>
+        <text>客户</text>
+      </view>
+      <view class="list_son" bindtap='product'>
+        <image src="/images/product.png"></image>
+        <text>产品</text>
+      </view>
+       <view class="list_son" bindtap='plan'>
+        <image src="/images/data.png"></image>
+        <text>拜访计划</text>
+      </view>
+    </view>
+    <view class="list_1">
+     
+    </view>
+  </view>
+  <view class="list">
+    <view class="list_1">
+      <view class="list_son" bindtap="contract">
+        <image src="/images/new.png"></image>
+        <text>合同</text>
+      </view>
+      <view class="list_son" bindtap='custom' bindtap='sign'>
+        <image src="/images/clock.png"></image>
+        <text>考勤</text>
+      </view>
+      <view class="list_son" bindtap='count'>
+        <image src="/images/static.png"></image>
+        <text>统计分析</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,73 @@
+/* pages/count/count.wxss */
+/* pages/count/count.wxss */
+.contain{
+  font-family: sans-serif;
+}
+.message{
+  width: 100%;
+  height: 86rpx;
+  /*让文字在当前view垂直剧中，可以使用行高  */
+  line-height: 86rpx;
+  /*设置视图底部线条，加颜色  dotted代表虚线 solid 代表实线*/
+  /*保证子视图在同一个水平线内  */
+  background-color:  #E0E0E0;
+  padding:0 20rpx;
+}
+.message text{
+  font-size: 30rpx;
+}
+.sale{
+  width: 100%;
+  height: 86rpx;
+  /*让文字在当前view垂直剧中，可以使用行高  */
+  line-height: 86rpx;
+  /*设置视图底部线条，加颜色  dotted代表虚线 solid 代表实线*/
+  border-bottom: 1rpx #eeeeee solid;
+  /*保证子视图在同一个水平线内  */
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+  padding-left: 20rpx;
+}
+.sale text{
+  /*文字大小  */
+  font-size: 35rpx;
+  text-align-last: left;
+}
+.objectClass{
+  width: 100%;
+  height: 86rpx;
+  /*让文字在当前view垂直剧中，可以使用行高  */
+  line-height: 86rpx;
+  /*设置视图底部线条，加颜色  dotted代表虚线 solid 代表实线*/
+  border-bottom: 1rpx #eeeeee solid;
+  /*保证子视图在同一个水平线内  */
+  display: flex;
+  flex-flow: row;
+  background-color: white;
+
+  padding:0 20rpx;
+}
+.objectClass input{
+  text-align: right;
+  line-height: 86rpx;
+  height: 86rpx;
+  font-size: 35rpx;
+
+}
+.objectClass text{
+  /*文字大小  */
+  width: 50%;
+  font-size: 35rpx;
+}
+.myimg{
+  height: 50rpx; 
+  padding: 18rpx 20rpx;
+  width: 100rpx;
+  
+}
+.button_center{
+  padding: 0 38%;
+  background-color: white;
+  margin-top: 30rpx;
+}

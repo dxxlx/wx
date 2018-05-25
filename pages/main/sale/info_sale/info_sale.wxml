@@ -1,0 +1,82 @@
+<!--pages/crm/sale/exist_sale/info_sale/info_sale.wxml-->
+<import src="location_item/location_item.wxml"/>
+<view class="container">
+  <view class="header">
+    <view class='{{ischecked?"left1":"left2"}}' bindtap="info">消息资料</view>
+    <view class='{{ischecked2?"left1":"left2"}}' bindtap="record">跟进记录</view>
+  </view>
+  <form bindsubmit='formSubmit' class="{{ischecked3?'info_display':'no_display'}}">
+    <view class="section1">
+      <view class="k"></view>
+      <view class="text">基本信息</view>
+    </view>
+    <view class="section">
+      <label for="state">
+        <text class="title">跟进状态</text>
+        <input type="text" name="state" id="state" value="{{info.save_level}}" placeholder="未填写"></input>
+      </label>
+    </view>
+    <view class="section">
+      <label for="name">
+        <text class="title">客户姓名</text>
+        <input type="text" name="name" id="name" value='{{info.client_name}}'></input>
+      </label>
+    </view>
+    <!-- <view class="section">
+      <label for="company">
+        <text class="title">所属行业</text>
+        <input type="text" name="company" id="company" placeholder='未填写'></input>
+      </label>
+    </view> -->
+    <view class="section">
+      <label for="product">
+        <text class="title">销售产品</text>
+        <input type="text" name="product" id="product" value="{{info.sale_name}}"></input>
+      </label>
+    </view>
+    <view class="section1">
+      <view class="k"></view>
+      <view class="text">其他信息</view>
+    </view>
+    <view class="section">
+      <label for="product">
+        <text class="title">创建日期</text>
+        <input type="text" name="create_time" id="create_time" value="{{info.sale_create_time}}" disabled='false'></input>
+      </label>
+    </view>
+    <view class="section">
+      <label for="product">
+        <text class="title">最新记录</text>
+        <input type="text" name="update_time" id="update_time" value="{{info.sale_update_time}}" disabled='false'></input>
+      </label>
+    </view>
+    <view class="btn-area">
+      <button class="button1" formType='submit'>修改</button>
+      <button class="button2" bindtap='deleteinfo'>删除</button>
+    </view>
+  </form>
+  <view class="{{ischecked4?'no_display':'schedule'}}">
+    <view class='data'>2018-5-8</view>
+    <view class="work">
+      <image class="star" src="/images/star.png"></image>
+      <text><text>芦鑫</text>创建了销售线索:<text>hhh</text></text>
+    </view>
+    <button>
+    </button>
+    <view style='margin-bottom:20rpx;' bindtap='sign'>
+      <image class="location" src="/images/location.png"></image>
+      <text>拜访签到</text>
+    </view>
+    <block wx:for="{{info}}" wx:for-item="item">
+      <template is="location_item"  data="{{...item}}">
+      </template>
+    </block>
+    <!-- <view class='data'>{{year}}</view>
+    <view class="work">
+      <image class="star" src="/images/star.png"></image>
+      <text>拜访了客户：<text>hhh</text></text>
+      <text style="float:right;margin-top:10rpx;margin-right:20rpx">{{time}}</text>
+      <view class="address">陕西省西安市雁塔区红砖南路532号</view>
+    </view>-->
+  </view> 
+</view>

@@ -1,0 +1,19 @@
+<!--pages/news/new_son/new_son.wxml-->
+<import src="new_son_item/new_son_item"/>
+<view class="container">
+  <!-- <view class="container_text">
+    <text class="{{isChecked?'is_Checked':'normal'}}" bindtap="serviceSelection">@我的</text>
+    <text class="{{isChecked2?'is_Checked':'normal'}}" bindtap="serviceSelection1">系统通知</text>
+  </view> -->
+  <view class='container_image' wx:if='{{isChecked}}'>
+    <image class="ba_img" src="/images/default.png"></image>
+    <text class='container_image_txt'>暂无数据</text>
+  </view>
+  <view class='container_news' wx:if='{{isChecked2}}'>
+  <block wx:for="{{info}}" wx:for-item="item">
+    <view class="section" bindtap='checknew' data-postId="{{item.id}}">
+      <template is="new_son_item" data="{{...item}}"/>
+    </view>
+  </block>
+  </view>
+</view>

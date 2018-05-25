@@ -1,0 +1,79 @@
+<!--pages/crm/custom/exist_custom/custom_info/custom_info.wxml-->
+<view class="container">
+  <!-- <view class="container_img" bindtap='sign'>
+    <image class="visit" src="/images/visit.png"></image>
+    <text>拜访签到</text>
+    <text style="color:green">{{address}}</text>
+  </view> -->
+  <form bindsubmit='formSubmit'>
+    <view class="section1">
+      <view class="k"></view>
+      <view class="text">基本信息</view>
+    </view>
+    <view class="section">
+      <label for="cus_name">
+        <text class="title">客户名称</text>
+        <input type="text" name="cus_name" id="cus_name" value='{{info.client_name}}' disabled='false'></input>
+      </label>
+    </view>
+    <!-- <view class="section">
+      <label for="name">
+        <text class="title">客户所有人</text>
+        <input type="text" name="name" id="name" value='大猩星'></input>
+      </label>
+    </view> -->
+    <!-- <view class="section">
+      <label for="company">
+        <text class="title">公司名称</text>
+        <input type="text" name="company" id="company" value='兄弟机械'></input>
+      </label>
+    </view> -->
+    <!-- <view class="section">
+      <label for="product">
+        <text class="title">销售产品</text>
+        <input type="text" name="product" id="product" value="电梯"></input>
+      </label>
+    </view> -->
+    <!-- <view class="section1">
+      <view class="k"></view>
+      <view class="text">联系信息</view>
+    </view> -->
+     <view class="section">
+      <label for="telephone">
+        <text class="title">电话</text>
+        <input type="text" name="telephone" id="telephone" value="{{info.phone}}" placeholder='未填写'></input>
+      </label>
+    </view>
+      <view class="section">
+      <label for="company">
+        <text class="title">客户行业</text>
+        <input type="text" name="company" id="company" value='{{info.area}}' placeholder='未填写'></input>
+      </label>
+    </view> 
+     <!-- <view class="section">
+      <label for="product">
+        <text class="title">最新记录</text>
+        <input type="text" name="product" id="product" value="2018-4-27"></input>
+      </label>
+    </view> -->
+    <view class="section1">
+      <view class="k"></view>
+      <view class="text">其他信息</view>
+    </view>
+    <view class="section">
+      <label for="product">
+        <text class="title">创建日期</text>
+        <input type="text" name="product" id="product" value="{{info.create_time}}" disabled='false'></input>
+      </label>
+    </view>
+     <view class="section">
+      <label for="product">
+        <text class="title">最新修改日期</text>
+        <input type="text" name="product" id="product" value="{{info.update_time}}" disabled='false'></input>
+      </label>
+    </view>
+     <view class="btn-area">
+      <button class="button1" formType='submit'>修改</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,5 @@
+<template name="sale_item">
+    <view class="name">{{client_name}}</view>
+    <view class="company">{{sale_name}}</view>
+    <view class="state">{{sale_state}}</view>
+</template>

@@ -1,0 +1,65 @@
+<!--pages/crm/sale/create_sale/create_sale.wxml-->
+<view class="container">
+  <form bindsubmit='formSubmit'>
+  <block wx:for="{{info}}">
+      <view class="section">
+    <label for="name">
+      <text class="title">姓名</text>
+      <input type="text" name="name" id="name" placeholder='必填' value="{{name}}"disabled='disabled'></input>
+    </label>
+  </view>
+  <!-- <view class="section">
+    <label for="company">
+      <text class="title">公司名称</text>
+      <input type="text" name="company" id="company" placeholder="必填" bindinput='bindCompanyInput'></input>
+    </label>
+  </view> -->
+   <view class="section">
+    <label for="work_number">
+      <text class="title">工号</text>
+      <input type="text" name="work_number" id="work_number" value="{{number}}" placeholder="必填" disabled='disabled'></input>
+    </label>
+  </view>
+  <view class="section">
+    <label for="phone_number">
+      <text class="title">个人电话</text>
+      <input type="text" name="phone_number" id="phone_number" value="{{info[0].phone}}" placeholder="必填"></input>
+    </label>
+  </view>
+   <view class="section">
+    <label for="email">
+      <text class="title">个人邮箱</text>
+      <input type="email" name="email" id="email" value="{{info[0].email}}" placeholder="必填"></input>
+    </label>
+  </view>
+  <view class="section">
+    <label for="company">
+      <text class="title">所在公司</text>
+      <input type="text" name="company" id="company" value="{{info[0].company}}" placeholder="必填" ></input>
+    </label>
+  </view>
+   <view class="section">
+    <label for="department">
+      <text class="title">所在部门</text>
+      <input type="text" name="department" id="department" value="{{info[0].department}}" placeholder="必填" ></input>
+    </label>
+  </view>
+   <view class="section">
+    <label for="position">
+      <text class="title">职位</text>
+      <input type="text" name="position" id="position" value="{{info[0].position}}" placeholder="必填" ></input>
+    </label>
+  </view>
+  </block>
+  <!-- <view class="section">
+    <label for="name">
+      <text class="title">销售名字</text>
+      <input type="text" name="sale_name" id="name" placeholder='必填' bindinput='bindNameInput'></input>
+    </label>
+  </view> -->
+
+  <view class="btn-area">
+     <button style="margin:30rpx auto 0 auto;background-color:#405f80;color:white;width:70%" bindtap="">保存</button>
+  </view>
+ </form>
+</view>

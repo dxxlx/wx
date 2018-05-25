@@ -1,0 +1,29 @@
+/* pages/crm/sale/create_sale/create_sale.wxss */
+/* page{
+  background-color: #f2f2f2;
+} */
+.container{
+  margin-top:30rpx;
+ 
+  
+}
+.title{
+  font-size:30rpx;
+  width:30%;
+  float:left;
+  margin-top:10rpx;
+}
+.section{
+  margin-left:20rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  padding-top:10rpx;
+  border-bottom:1px solid #ccc; 
+  padding: 15rpx 0 15rpx 0;
+}
+.btn-area{
+  width:70%;
+  margin:20rpx auto 0 auto;
+  background-color: #405f80;
+ 
+}

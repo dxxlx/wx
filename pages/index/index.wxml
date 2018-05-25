@@ -1,0 +1,15 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+   <view class="loader">
+        <view class="loading-3">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>     
+        </view>
+    </view>      
+</view>

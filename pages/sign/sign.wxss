@@ -1,0 +1,9 @@
+/* pages/sign/sign.wxss */
+.container{
+  margin:30rpx 0 0 30rpx;
+}
+.img{
+  width:50rpx;
+  height:50rpx;
+  vertical-align: middle
+}

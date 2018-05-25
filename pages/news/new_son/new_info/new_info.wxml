@@ -1,0 +1,4 @@
+<!--pages/news/new_son/new_info/new_info.wxml-->
+<view class="container">
+  <text style="font-size:30rpx;color:#405f80">{{name}}</text>这次拜访的主题是<text style="font-size:30rpx;color:#405f80">{{topic}}</text>
+</view>

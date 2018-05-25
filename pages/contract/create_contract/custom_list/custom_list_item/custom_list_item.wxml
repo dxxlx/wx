@@ -1,0 +1,3 @@
+<template name="custom_list_name">
+  <view class="custom">{{name}}</view>
+</template>

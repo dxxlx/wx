@@ -1,0 +1,19 @@
+<!--pages/plan/sale_list.wxml-->
+ <import src="sale_list_item/sale_list_item.wxml"/>
+ <view class="container1">
+  <block wx:for="{{info}}" wx:for-item="item">
+    <view class="section" bindtap='skip' data-postID="{{item.sale_id}}" data-postName="{{item.client_name}}">
+      <template is="sale_item" data="{{...item}}"/>
+    </view>
+  </block>
+</view>  
+<!-- <view class="container1">
+  <block>
+    <view class="section" bindtap='skip'>
+      <view class="name">luxin</view>
+      <view class="company">123</view>
+      <view class="state">未处理</view>
+    </view>
+  </block>
+  
+</view> -->

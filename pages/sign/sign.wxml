@@ -1,0 +1,8 @@
+<!--pages/sign/sign.wxml-->
+<view class="container">
+  <view bindtap='sign'>
+    <image class="img" src="/images/location.png"></image>
+    <text>考勤签到</text>
+    <text style="margin-left:30rpx;color:green">{{address}}</text>
+  </view>
+</view>

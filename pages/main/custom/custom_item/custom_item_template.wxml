@@ -1,0 +1,7 @@
+<template name="cus_item">
+      <view class="name">{{client_name}}</view>
+      <view class="data">创建日期:
+        <span>2018-4-26</span>
+      </view>
+      
+</template>

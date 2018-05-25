@@ -1,0 +1,66 @@
+/* pages/plan/create_plan/create_plan.wxss */
+/* pages/plan/plan.wxss */
+/* pages/plan/plan.wxss */
+
+page{
+     background-color: #f5f7f9; 
+}
+.contain{
+  display: flex;
+  flex-direction: column
+}
+.red{
+  color:red;
+}
+.section{
+  height: 1rem;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20rpx;  
+   padding:30rpx 0 30rpx 0; 
+   border-bottom:1px solid #f3f5f7;
+   font-size:30rpx;
+}
+.section input{
+  color:#d2d2d6;
+}
+.section__title{
+  float: left;
+  margin-right:10rpx;
+  font-size:30rpx;
+  padding-left:20rpx;
+  /* padding-top:8rpx */
+}
+.img{
+  width:20rpx;
+  float:right;
+  height:20rpx;
+  vertical-align: middle;
+  margin-top:8rpx;
+  margin-right:20rpx;
+}
+.picker{
+  margin-left:20rpx;
+}
+.section_two{
+  width: 100%; 
+  background-color: white;
+  margin-bottom:20rpx;
+  padding:10rpx 0 10rpx 0; 
+  border-bottom: 1px solid #f3f5f7;
+  font-size:30rpx
+}
+.section_two textarea{
+  padding-left:20rpx;
+}
+.section__two_title{
+  width: 30%;
+  font-size:30rpx;
+  padding-left:20rpx;
+  /* padding-top:8rpx; */
+}
+.btn-area{
+  width:70%;
+  margin:50rpx auto 0 auto;
+  background-color: #405f80;
+}

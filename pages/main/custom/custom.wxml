@@ -1,0 +1,17 @@
+<!--pages/crm/custom/custom.wxml-->
+<import src="custom_item/custom_item_template" />
+<view>
+  <view class="container" wx:if="{{create}}">
+    <image class="img" src='/images/nores.png'></image>
+    <text>目前没有客户</text>
+    <view bindtap='createCustom' class="create">请创建</view>
+  </view>
+  <view class="container2" wx:if="{{display}}">
+    <block wx:for="{{info}}" wx:for-item="item">
+      <view class="section" bindtap='checkCus' data-postID="{{item.sale_id}}">
+        <template is="cus_item" data="{{...item}}" />
+      </view>
+    </block>
+      <button style="margin:30rpx auto 0 auto;background-color:#405f80;color:white;width:70%" bindtap="add">添加新的客户</button>
+  </view>
+</view>

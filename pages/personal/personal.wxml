@@ -1,0 +1,24 @@
+<!--pages/personal/personal.wxml-->
+<view class="container">
+  <view class="container1">
+    <view class="image_con">
+      <image class="head_image" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="text_con">
+      <text class="work_name">{{user_name}}</text>
+      <text class="work_number">工号：<text>{{work_number}}</text></text>
+    </view>
+  </view>
+  <view class="container2">
+    <view bindtap='info'>
+      <image class="icon" src="/images/info.png"></image>
+      <text>个人信息</text>
+      <image class="icon_arro" src="/images/arro.png"></image>
+    </view>
+    <view>
+     <image class="icon" src="/images/about.png"></image>
+      <text>关于</text>
+      <image class="icon_arro" src="/images/arro.png"></image>
+    </view>
+  </view>
+</view>

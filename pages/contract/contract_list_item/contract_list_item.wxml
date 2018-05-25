@@ -1,0 +1,5 @@
+<template name="contract_list_item">
+  <view class="name">{{contract_topic}}</view>
+  <view class="date">客户：{{name}}</view>
+  <!-- <view class="date">2018/5/11</view> -->
+</template>

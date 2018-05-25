@@ -1,0 +1,4 @@
+<template name="new_son_item">
+  <text><text style="color:red">{{name}}</text>的拜访计划</text>
+      <text class="label" style=''>{{isRead}}</text>
+</template>

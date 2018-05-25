@@ -1,0 +1,4 @@
+<template name="display_plan_item">
+   <view class="name">拜访主题：{{client_name}}</view>
+   <view class="date">{{visit_time}}</view>
+</template>

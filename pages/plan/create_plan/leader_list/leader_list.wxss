@@ -1,0 +1,5 @@
+/* pages/plan/create_plan/leader_list/leader_list.wxss */
+.section{
+  border-bottom:1px solid #ccc;
+  padding: 50rpx 0 50rpx 30rpx;
+}

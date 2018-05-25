@@ -1,0 +1,19 @@
+/* pages/plan/sale_list.wxss */
+.section{
+  padding:20rpx 0 20rpx 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.name{
+   font-weight: bold; 
+   font-size: 35rpx; 
+   margin-bottom: 20rpx;
+}
+.company{
+  margin-bottom: 20rpx;
+  font-size:30rpx;
+  color:#ADADAD;
+}
+.state{
+  font-size:30rpx;
+  color: #ADADAD;
+}

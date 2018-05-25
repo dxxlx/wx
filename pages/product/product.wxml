@@ -1,0 +1,17 @@
+<!--pages/product/product.wxml-->
+<view>
+  <view class="section">
+    <image class="product" src="/images/timg.jpg"></image>
+    <view class="pro_info">
+      <text>电梯G520</text>
+      <text>售价:1320</text>
+    </view>
+  </view>
+  <view class="section">
+    <image class="product" src="/images/timg2.jpg"></image>
+    <view class="pro_info">
+      <text>电梯G520</text>
+      <text>售价:1320</text>
+    </view>
+  </view>
+</view>

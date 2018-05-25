@@ -1,0 +1,8 @@
+<import src="custom_list_item/custom_list_item"/>
+<view>
+  <block wx:for="{{info}}" wx:for-item="item">
+    <view class="section" bindtap='selectCustom' data-postName="{{item.name}}">
+      <template is="custom_list_name" data="{{...item}}"/>
+    </view>
+  </block>
+</view>

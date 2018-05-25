@@ -1,0 +1,44 @@
+<!--pages/plan/plan.wxml-->
+<view class="contain">
+  <form bindsubmit='formSubmit'>
+    <view class="section" bindtap='checkCustom'>
+    <!-- <image src="/images/arro.png" class="img"> </image> -->
+      <view class="section__title">拜访对象
+        <text class="red">*</text>
+      </view>
+      <input style="color:black" name="" placeholder="请选择" value="{{name}}" disabled='disabled'/>
+    </view>
+    <view class="section">
+      <view class="section__title">拜访主题
+      </view>
+       <input style="color:black" name="" placeholder="请输入" name="theme" />
+    </view>
+    <view class="section">
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2027-09-01" bindchange="bindDateChange" placeholder="请选择">
+        <view class="picker">
+          拜访时间 {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section_two">
+      <view class="section__two_title">拜访内容</view>
+      <textarea name="visit_content" id="visit_content" placeholder="请输入"></textarea>
+    </view>
+    <view class="section_two">
+      <view class="section__two_title">拜访结果</view>
+      <textarea name="result" placeholder="请输入"></textarea>
+    </view>
+    <view class="section_two">
+      <view class="section__two_title">其他事项</view>
+      <textarea name="other" placeholder="请输入"></textarea>
+    </view>
+    <view class="section">
+      <view class="section__title">汇报给
+      </view>
+       <input style="color:black" name="" placeholder="请选则" name="leadername" value='{{leadername}}' bindtap="report" />
+    </view>
+    <view class="btn-area">
+      <button style="background-color:#405f80;color:#fff;width:70%;border-radius:3px;" formType="submit" form-type='submit'>保存</button>
+    </view>
+  </form>
+</view>

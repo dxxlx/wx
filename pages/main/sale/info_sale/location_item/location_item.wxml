@@ -1,0 +1,9 @@
+<template name="location_item">
+    <view class='data'>{{year}}</view>
+      <view class="work">
+        <image class="star" src="/images/star.png"></image>
+        <text>拜访了客户：<text>hhh</text></text>
+        <text style="float:right;margin-top:10rpx;margin-right:20rpx">{{time}}</text>
+        <view class="address">{{location}}</view>
+      </view>
+</template>

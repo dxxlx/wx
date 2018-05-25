@@ -1,0 +1,10 @@
+.name{
+   font-weight: bold; 
+   font-size: 35rpx; 
+   margin-bottom: 20rpx;
+}
+.data{
+  margin-bottom: 20rpx;
+  font-size:30rpx;
+  color:#ADADAD;
+}

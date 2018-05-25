@@ -1,0 +1,5 @@
+@import "custom_list_item/custom_list_item";
+.section{
+  border-bottom:1px solid #ccc;
+  padding: 50rpx 0 50rpx 30rpx;
+}

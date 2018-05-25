@@ -1,0 +1,29 @@
+<!--pages/count/count.wxml-->
+<!--pages/count/count.wxml-->
+<view class="contain">
+  <view class="message">
+    <text>模板中的数字和金额控件可进行统计</text>
+  </view>
+  <view class='sale'>
+    <image class="myimg" src="./images/income.png"></image>
+    <text>今日销售（元）</text>
+  </view>
+  <view class='objectClass'>
+    <text>今日销售（元）</text>
+    <input placeholder='0'></input>
+    <image class="myimg" src="./images/aim.png"></image>
+  </view>
+  <view class='objectClass'>
+    <text>一周销售（元）</text>
+    <input placeholder='0'></input>
+    <image class="myimg" src="./images/aim.png"></image>
+  </view>
+  <view class='objectClass'>
+    <text>一月销售（元）</text>
+    <input placeholder='0'></input>
+    <image class="myimg" src="./images/aim.png"></image>
+  </view>
+  <view class="button_center">
+    <button type="primary" bindtap="primary" size="mini">保存</button>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+/* pages/personal/personal.wxss */
+page{
+  
+  background-color: #f2f2f2;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.head_image{
+  width:150rpx;
+  height:150rpx;
+  vertical-align: middle;
+}
+.container1{
+   background-color: #fff; 
+  border-bottom:1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+.image_con{
+  margin-left:20rpx;
+}
+.text_con{
+  margin-top:20rpx;
+  margin-left:20rpx;
+  
+}
+.text_con text{
+  font-size:30rpx;
+}
+.work_number{
+  display: block;
+  margin-top: 30rpx;
+}
+.work_name{
+  margin-top:20rpx;
+}
+.container2{
+  background-color:#fff;
+  margin-top:30rpx;
+}
+.container2 text{
+  font-size:30rpx;
+  margin-left:20rpx;
+}
+.icon{
+  width:70rpx;
+  height:70rpx;
+  vertical-align: middle;
+  
+}
+.icon_arro{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+  float:right;
+  margin-top:20rpx;
+}
+.container2 view{
+  padding:20rpx 0 20rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}

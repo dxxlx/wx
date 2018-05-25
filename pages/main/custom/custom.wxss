@@ -1,0 +1,27 @@
+/* pages/crm/custom/custom.wxss */
+@import "custom_item/custom_item_template.wxss";
+.container{
+  width:350rpx;
+  margin:120rpx auto 20rpx auto;
+  text-align: center;
+}
+.img{
+  width:350rpx;
+  height:350rpx;
+}
+.container text{
+  display:block;
+  margin-top:20rpx;
+  font-size:30rpx;
+}
+.create{
+  color:#405f80;
+  font-size:30rpx;
+  margin-top:20rpx;
+}
+.section{
+  padding:20rpx 0 20rpx 30rpx;
+  border-bottom: 1px solid #ccc;
+  
+}
+
